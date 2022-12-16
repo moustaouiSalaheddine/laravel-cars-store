@@ -5,6 +5,18 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  :root {
+        --green1: #61b15a;
+        --green2: #48b83e;
+        --green2op: #48b83ee8;
+        --greenBorder: #008000;
+        /* --green1: #830000;
+        --green2: #830000;
+        --green2op: #830000e8;
+        --greenBorder: #830000; */
+        --red: #1e90ff;
+        --white: #ffffff;
+    }
   *{
       margin: 0;
       padding: 0;
@@ -27,11 +39,11 @@
       font-size: 0.85rem;
   }
   .btn:hover{
-      color: #61b15a;
+      color: var(--green1);
   }
   .green-label{
       background-color: #defadb;
-      color: #48b83e;
+      color: var(--green2);
       border-radius: 5px;
       font-size: 0.8rem;
       margin: 0 3px;
@@ -83,7 +95,7 @@
       transition: 300ms ease-in-out 0s;
   }
   .options input[type="radio"]:checked ~ .checkmark{
-      background: #61b15a;
+      background: var(--green1);
       transition: 300ms ease-in-out 0s;
   }
   .options input[type="radio"]:checked ~ .checkmark:after{
@@ -124,7 +136,7 @@
       background-color: #f3f3f3;
   }
   .tick input:checked ~ .check {
-      background-color: #61b15a;
+      background-color: var(--green1);
   }
   .check:after {
       content: "";
@@ -172,7 +184,7 @@
   }
   .badge-primary{
       background-color: #defadb;
-      color: #48b83e
+      color: var(--green2)
   }
   .brand .check{
       background-color: #fff;
@@ -232,14 +244,14 @@
       font-size: 0.9rem   ;
   }
   .btn.btn-primary{
-      background-color: #48b83e;
+      background-color: var(--green2);
       color: #fff;
-      border: 1px solid #008000;    
+      border: 1px solid var(--greenBorder);    
       border-radius: 10px;
       font-weight: 800;
   }
   .btn.btn-primary:hover{
-      background-color: #48b83ee8;
+      background-color: var(--green2op);
   }
   img{
       width: 192px;
