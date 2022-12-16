@@ -70,3 +70,21 @@ install laravel ui for bootstrap
 `composer require laravel/ui`
 
 `php artisan ui bootstrap --auth`
+
+show all ` php artisan ...` command
+` php artisan `
+
+create Product model
+`php artisan make:mode Product`
+create ProductController
+`php artisan make:controller ProductController`
+clear cache
+`php artisan optimize`
+show all route
+`php artisan route:list`
+for acces create files
+`php artisan storage:link`
+add colmun in table products
+`php artisan make:migration add_user_id_to_products_table --table=products`
+
+
