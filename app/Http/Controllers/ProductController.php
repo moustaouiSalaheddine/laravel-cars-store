@@ -73,6 +73,7 @@ class ProductController extends Controller
         if ($request->hasFile('photo') && $request->file('photo')->isValid()) {
             $product->image = $this->productImage($request->photo);
         }
+        // dd($request); // show log
         $product->save();
 
         // Associate the product with the selected category

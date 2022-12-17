@@ -58,7 +58,7 @@
                             @endif
                         @else
                             <li class="nav-item ">
-                                <button type="button" href="{{ url('/products/create') }}" class="btn btn-primary shadow-sm  mx-4">New post</button>
+                                <a type="button" href="{{ route('products.create') }}" class="btn btn-primary shadow-sm  mx-4" style="background-color: #61b15a; border-color: #61b15a">New post</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

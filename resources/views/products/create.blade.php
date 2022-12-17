@@ -17,16 +17,16 @@
       </div>
       <div class="form-group">
           <label>Price</label>
-          <input type="number" name="price" class="form-control" id="inputUsername" placeholder="Username" required="">
+          <input type="number" name="price" max="1000000" class="form-control" id="inputUsername" placeholder="Username" required="">
       </div>
       <div class="form-group">
           <label>Image</label>
-          <input type="file" name="photo" class="form-control" id="inputEmail" placeholder="Email" required="">
+          <input type="file" name="photo" class="form-control" id="inputEmail" placeholder="Email" accept="image/png, image/gif, image/jpeg" required="">
       </div>
       <div class="form-group">
           <label>Categorie</label>
-            <select class="form-control" name="category_id" required="">
-                <option>Select categorie</option>
+            <select class="form-control" name="category_id" required="" required>
+                <option value="null">Select categorie</option>
                 
                 @foreach ($categories as $category)
                 <option value="{{ $category->id }}"> 
@@ -41,7 +41,7 @@
       </div>
 
       <div class="form-group mt-3">
-          <button type="submit" class="btn btn-primary btn-block">Send</button>
+          <button type="submit" class="btn btn-primary btn-block" style="background-color: #61b15a; border-color: #61b15a">Create post</button>
       </div>
   </form>
 </div>

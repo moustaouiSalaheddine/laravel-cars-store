@@ -78,7 +78,7 @@
                   </select>
             </div>
             <div class="form-group mt-3">
-                <button type="submit" class="btn btn-primary btn-block">Send</button>
+                <button type="submit" class="btn btn-primary btn-block" style="background-color: #61b15a; border-color: #61b15a">Send</button>
             </div>
          </form>
       </div>
