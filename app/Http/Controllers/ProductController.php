@@ -41,6 +41,24 @@ class ProductController extends Controller
 
 
     }
+    // public function details(Request $request)
+    // {
+    //     // dd($request);
+    //     $category_id = $request->category_id;
+    //     // dd($category_id);
+    //     if ($category_id !== "0") {
+    //         $products = Product::WhereHas('categories', function ($query)  use ($category_id) {
+    //             $query->where('category_id', $category_id);
+    //         })->get();
+    //         $categories = Category::all();
+    //         return view('products.index', ["products" => $products, "categories" => $categories]);
+    //     } else {
+    //         return redirect()->route('products.index');
+    //     }
+    //     // $products = Product::with('categories')->get();
+
+
+    // }
 
     /**
      * Send list of category of parent to add product page
@@ -92,7 +110,11 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        return Product::with('categories')->find($id);
+        // return Product::with('categories')->find($id);
+        $product =  Product::with('categories')->find($id);
+
+        return view('products.show', ["product" => $product]);
+        
     }
 
     /**

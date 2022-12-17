@@ -24,6 +24,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/filter', [App\Http\Controllers\ProductController::class, 'filter'])->name('filter');
+Route::post('/details', [App\Http\Controllers\ProductController::class, 'details'])->name('details');
 
 Route::resources([
     'categories'    => CategoryController::class,
